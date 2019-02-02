@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>MY REGISTRATION FORM</title>
+<style>
+body{
+color:white;
+text-align:center;
+font-family:Arial;
+background:url("ScaredRashGerenuk-size_restricted.gif");
+background-attachment: fixed;
+background-size: cover;
+background-position: center;
+background-image: cover;
+}
+h1{
+  font-size: 20px;
+  font-style: italic;
+}
+h2{
+  font-family:cursiv;
+  font-style: italic;
+}
+img{
+  border-radius:100px 0px 100px 0px;
+  box-shadow: 10px 10px grey;
+}
+</style>
+</head>
+<body>
+<div>
+<img src="images (7).jpg" alt="intro" height="200" width="200">
+<marquee><h1>REGISTRATION FORM FOR STUDENTS</h1></marquee>
+<hr>
+<h1>MY REGISTRATION FORM</h1>
+<form action="#" name="myform" onsubmit="return validation()">
+<label>USERNAME:</label>
+<input type="text" class="name" id="name"><br><br>
+<label>PASSWORD:</label>
+<input type="password" id="password"><br><br>
+<label>EMAIL ID:</label>
+<input type="email" name="email" id="email"><br><br>
+<label>MOBILE NO:</label>
+<input type="mobile number"><br><br>
+<label>SUBMIT:</label>
+<input type="submit" id="submit"><br><br>
+</form>
+</div>
+<script>
+function validation()
+{
+name=document.getElementById('name').value;
+if(name==""){
+  window.alert("please fill me up");
+}
+else if(name.length<=15 || name.length>4){
+  window.alert("invalid name");
+}
+else{
+window.alert("your name was submitted");
+}
+password=document.getElementById('password').value;
+if(password==""){
+  window.alert("please fill the password");
+}
+else if(password.length<=10 || password.length>=4)
+{window.alert("invalid password");
+}
+else{
+window.alert("your password was submitted");
+}
+email=document.getElementById('email').value;
+if(email==""){
+  window.alert("please fill the email");
+}
+else if(email.length<=15 || email.length>=3)
+{window.alert("invalid email");
+}
+else{
+window.alert("your email was submitted");
+}
+}
+</script>
+</body>
+</html>
